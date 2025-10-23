@@ -10,53 +10,33 @@
 <body>
   <h1 class="calendar-title">Traditional Fijian Lunar and Seasonal Calendar</h1>
 
-
   <div class="calendar-grid">
-    <div class="month-card" onclick="activateMonth('January')"> January  <br> 
-      VULA I NUQA LEVU </div>
-    <div class="month-card" onclick="activateMonth('February')">February <br>
-     VULA I SEVU</div>
-    <div class="month-card" onclick="activateMonth('March')">March <br>
-    VULA I KELIKELI</div>
-    <div class="month-card" onclick="activateMonth('April')">April <br>
-    VULA I GASAU</div>
-    <div class="month-card" onclick="activateMonth('May')">May <br>
-    VULA I DOI</div>
-    <div class="month-card" onclick="activateMonth('June')">June <br>
-     VULA I WEREWERE</div>
-    <div class="month-card" onclick="activateMonth('July')">July <br>
-    VULA I CUKICUKI</div>
-    <div class="month-card" onclick="activateMonth('August')">August <br>
-     VULA I SENIDRALA</div>
-    <div class="month-card" onclick="activateMonth('September')">September <br>
-    VULA I VAVAKADA</div>
-    <div class="month-card" onclick="activateMonth('October')"> October <br>
-    VULA I BALOLO LAILAI</div>
-    <div class="month-card" onclick="activateMonth('November')">November <br>
-    VULA I BALOLO LEVU</div>
-    <div class="month-card" onclick="activateMonth('December')">December <br>
-    VULA I NUQA LAILAI/VULA I TABU LACA/ VIVILACA</div>
+    <div class="month-card january" onclick="activateMonth('January')">January <br> VULA I NUQA LEVU</div>
+    <div class="month-card february" onclick="activateMonth('February')">February <br> VULA I SEVU</div>
+    <div class="month-card march" onclick="activateMonth('March')">March <br> VULA I KELIKELI</div>
+    <div class="month-card april" onclick="activateMonth('April')">April <br> VULA I GASAU</div>
+    <div class="month-card may" onclick="activateMonth('May')">May <br> VULA I DOI</div>
+    <div class="month-card june" onclick="activateMonth('June')">June <br> VULA I WEREWERE</div>
+    <div class="month-card july" onclick="activateMonth('July')">July <br> VULA I CUKICUKI</div>
+    <div class="month-card august" onclick="activateMonth('August')">August <br> VULA I SENIDRALA</div>
+    <div class="month-card september" onclick="activateMonth('September')">September <br> VULA I VAVAKADA</div>
+    <div class="month-card october" onclick="activateMonth('October')">October <br> VULA I BALOLO LAILAI</div>
+    <div class="month-card november" onclick="activateMonth('November')">November <br> VULA I BALOLO LEVU</div>
+    <div class="month-card december" onclick="activateMonth('December')">December <br> VULA I NUQA LAILAI / VULA I TABU LACA / VIVILACA</div>
   </div>
 
   <div class="month-detail hidden">
-    <button class="back-button" onclick="goBackToGrid()">«</button>
+    <!-- ✅ Back to grid button now correctly wired -->
+    <button id="backToTop" onclick="goBackToGrid()">«</button>
+
     <div class="month-expanded" id="monthTitle">Month Name</div>
     <div class="flip-card-panel"></div>
   </div>
 
+  <footer class="calendar-footer sticky-footer">
+    Compiled by Marika Radua PG Dip AGR (Hort) – &copy; Soqosoqo Vakamarama iTaukei Cakaudrove (2025)
+  </footer>
+
   <script src="script.js"></script>
-<br>
-<br>
-
-
-
-
-<button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
-
-<footer class="calendar-footer sticky-footer">
-  Compiled by Marika Radua PG Dip AGR (Hort) – &copy; Soqosoqo Vakamarama iTaukei Cakaudrove (2025)
-</footer>
-
-
 </body>
 </html>
